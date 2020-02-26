@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single"
+
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            />
+        <item
+            android:id="@+id/favorite"
+            android:title="Favorite List"
+            android:icon="@drawable/favorite"/>
+        <item
+            android:id="@+id/note"
+            android:title="Memo"
+            android:icon="@drawable/taking_notes"/>
+        <item
+            android:id="@+id/timetable"
+            android:title="Timetable"
+            android:icon="@drawable/timetable_outline"/>
+        <item
+            android:id="@+id/record"
+            android:title="Sound Recorder"
+            android:icon="@drawable/record_icon"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/sendFeedback"
+            android:title="Send Feedback"
+            android:icon="@drawable/feedback"/>
+        <item
+            android:id="@+id/about"
+            android:title="About Us"
+            android:icon="@drawable/about"/>
+        <item
+            android:id="@+id/logout"
+            android:title="Exit"
+            android:icon="@drawable/ic_exit"/>
+    </group>
+</menu>
