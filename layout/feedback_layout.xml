@@ -1,0 +1,100 @@
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        >
+
+        <ImageView
+            android:id="@+id/imageview_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:tint="#11000000"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="0.9"
+            android:src="@drawable/app_logo"
+            android:fitsSystemWindows="true"
+            />
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="400dp"
+       android:gravity="center"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="16dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="To:"
+            android:textSize="20dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:layout_marginLeft="60dp"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:hint="University Garage App Forum"
+            android:editable="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Message:"
+            android:textSize="20dp"
+            android:layout_height="42dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/message"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="700dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Send Feedback"
+        android:background="@drawable/rectangle"
+        android:layout_gravity="center"
+        android:id="@+id/btnMessage"/>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
